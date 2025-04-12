@@ -9,5 +9,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "/apoloIXcode/home",
+  base: "/apoloIXcode/home/",
 })
