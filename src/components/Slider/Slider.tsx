@@ -1,17 +1,25 @@
 import React, { useEffect, useRef } from "react"
 import './Slider.css';
-import automatizacion from '../../assets/brands/automatizacion.jpg';
 import marketingDigital from '../../assets/brands/marketing-digital.jpg';
-import marketingSeo from '../../assets/brands/marketing-seo.jpg';
 import facturacion from '../../assets/brands/facturacion.jpg';
+import imagenArcaArgentina from '../../assets/brands/imagenArca.jpg';
+import sistemasInformaticos from '../../assets/brands/sistemasInformaticos.png';
+import containers from '../../assets/brands/container-publisher-sizes.jpg';
+import automatizacionSistemas from '../../assets/brands/automaticacionSistemas.png';
+import brandBarcoComercial from '../../assets/brands/barco-comercio-noche.jpg';
+import globalizacion from '../../assets/brands/globalizacion.jpg';
 
 
 //logos
 
 const brands = [
-    automatizacion,
+    imagenArcaArgentina,
+    sistemasInformaticos,
+    containers,
+    automatizacionSistemas,
+    brandBarcoComercial,
+    globalizacion,
     marketingDigital,
-    marketingSeo,
     facturacion,
 ];
 

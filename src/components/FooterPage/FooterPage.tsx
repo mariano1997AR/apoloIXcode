@@ -1,5 +1,6 @@
 import React from "react"
 import './FooterPage.css';
+import { Link } from "react-router-dom";
 export const FooterPage: React.FC = () => {
     return (
         <footer className='container-footer'>
@@ -13,7 +14,7 @@ export const FooterPage: React.FC = () => {
                 <article className='columna-redes-sociales'>
                     <ul>
                         <li className='subtitulo-footer'><b>Nuestra politicas</b></li>
-                        <li><a href="#">Politicas de privacidad</a></li>
+                        <li><Link to='/politicas'>Politicas de privacidad</Link></li>
                         <li><a href="#">Terminos y condiciones</a></li>
                         <li><a href="#">Seguridad</a></li>
                     </ul>
@@ -22,9 +23,9 @@ export const FooterPage: React.FC = () => {
                 <article className='columna-redes-sociales'>
                     <ul>
                         <li className='subtitulo-footer'><b>Sociales</b></li>
-                        <li><a href="#">Linkedln</a></li>
-                        <li><a href="#">Anuncios</a></li>
-                        <li><a href="#">X</a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/company/apoloixcode/?viewAsMember=true">Linkedln</a></li>
+                        <li><Link to='/anuncios'>Anuncios</Link></li>
+                        <li><a target="_blank" href="https://x.com/apoloixcode">X</a></li>
                     </ul>
                 </article>
             </section>

@@ -1,0 +1,36 @@
+.nosotros-main{
+    max-width: 1800px;
+    margin: 0 auto;
+    border-radius: 50px 40px 50px 50px;
+    margin-top: 20px;
+}
+.flex-nosotros-main{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+}
+.flex-nosotros-left{
+    flex: 50%;
+    padding: 20px;
+   
+}
+.flex-nosotros-right{
+    flex: 50%;
+    padding: 20px;
+}
+.image{
+    border-radius: 50px;
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+    
+}
+.parrafo{
+   margin:40px auto;
+}
+
+@media (max-width: 1060px) {
+    .flex-nosotros-main{
+        flex-direction: column;
+    }
+}

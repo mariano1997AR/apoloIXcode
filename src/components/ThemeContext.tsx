@@ -1,4 +1,4 @@
-import React,{createContext,useState,useEffect} from "react";
+import React,{createContext,useState,useEffect, useContext} from "react";
 
 type Theme = "light" | "dark"  | "linea";
 
@@ -28,4 +28,12 @@ export const ThemeProvider:React.FC<{children: React.ReactNode}> = ({children}) 
               {children}
          </ThemeContext.Provider>
     )
-}
+
+};
+
+export const useTheme = ()=>{
+   const context = useContext(ThemeContext);
+   if(!context) throw new Error('useColor debe usarse dentro de <ColorProvider>');
+   return context;
+   
+};

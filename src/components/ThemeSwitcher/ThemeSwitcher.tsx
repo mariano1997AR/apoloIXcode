@@ -1,14 +1,11 @@
-import React,{useContext} from "react";
-import { ThemeContext } from "../ThemeContext";
+import React from "react";
+
+import { useTheme } from "../ThemeContext";
 import './ThemeSwitcher.css';
 
 
 export const ThemeSwitcher: React.FC = ()=>{
-     const themeContext = useContext(ThemeContext);
-
-     if(!themeContext) return null;
-
-     const {theme,toggleTheme} = themeContext;
+     const {theme,toggleTheme} = useTheme();
 
      return(
          <label className="switch">
