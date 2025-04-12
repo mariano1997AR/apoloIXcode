@@ -8,7 +8,6 @@ import { Anuncios } from './Pages/Anuncios/Anuncios'
 import { FooterPage } from './components/FooterPage/FooterPage'
 import { Nosotros } from './Pages/Nosotros/Nosotros'
 import { Politicas } from './Pages/Politicas/Politicas'
-import { ProtocoloSeguridad } from './Pages/ProtocoloSeguridad/ProtocoloSeguridad'
 import { ApoloONE } from './Pages/ApoloONE/ApoloONE'
 
 
