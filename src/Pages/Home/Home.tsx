@@ -1,6 +1,5 @@
 import React from "react"
 import './Home.css';
-import plataformaWebIntegracion from '../../assets/publisher/plataforma-web.svg';
 import { Link } from "react-router-dom";
 import { Slider } from "../../components/Slider/Slider";
 import { Time } from "../../components/Tiempo/Time";
