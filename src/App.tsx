@@ -2,7 +2,7 @@ import './App.css'
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import { Home } from './Pages/Home/Home'
 import { About } from './Pages/About/About'
-import { NotFound } from './Pages/NotFound/NotFound'
+//import { NotFound } from './Pages/NotFound/NotFound'
 import { Navbar } from './components/Navbar/NavbarPage'
 import { Anuncios } from './Pages/Anuncios/Anuncios'
 import { FooterPage } from './components/FooterPage/FooterPage'
@@ -25,7 +25,7 @@ function App() {
                 <Route path='/anuncios' element={<Anuncios />} />
                 <Route path='/politicas' element={<Politicas />}/>
                 <Route path='/about-apoloONE' element={<ApoloONE />}/>
-                <Route path='*' element={<NotFound />} />
+                <Route path='*' element={<Home />} />
           </Routes>
           <FooterPage />
     </Router>
