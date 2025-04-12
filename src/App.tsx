@@ -15,7 +15,7 @@ function App() {
 
 
   return (
-    <Router basename='/apoloixcode/'>
+    <Router>
           <Navbar />
           <Routes>
                 <Route path='/' element={<Home />} />
