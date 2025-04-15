@@ -9,6 +9,7 @@ import { Politicas } from './Pages/Politicas/Politicas'
 import { ApoloONE } from './Pages/ApoloONE/ApoloONE'
 import { Layout } from './components/Layout/Layout'
 import { Contacto } from './Pages/Contacto/Contacto'
+import { Agendar } from './Pages/Agendar/Agendar'
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
         <Route path='/servicios/politicas' element={<Politicas />} />
         <Route path='/servicios/about-apoloONE' element={<ApoloONE />} />
         <Route path='/contacto' element={<Contacto />} />
+        <Route path='/agendar' element={<Agendar />} />
+
         <Route path='*' element={<Home />} />
       </Route>
     </Routes>

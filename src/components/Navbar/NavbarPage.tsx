@@ -27,8 +27,8 @@ export const NavbarPage: React.FC = () => {
                        
                     </ul>
                 </li>
-                <li className="linea-bottom"><Link className="a hover:text-gray-400 mb-2" style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to=''>Contacto</Link></li>
-               <li className="link-externo  "><a className="solicitar-demo" href="http://localhost:5174/" target="_blank">Solicita una Demo</a></li>
+                <li className="linea-bottom"><Link className="a hover:text-gray-400 mb-2" style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to='/contacto'>Contacto</Link></li>
+               <li className="link-externo"><Link className="solicitar-demo" to='/agendar'>Solicita una demo</Link></li>
                 <li className="switch "><ThemeSwitcher /></li>
             </ul>
         </nav>

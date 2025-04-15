@@ -2,14 +2,14 @@
   "name": "apoloix",
   "homepage": "https://github.com/mariano1997AR/apoloIXcode/",
   "private": true,
-  "version": "1.2.2",
+  "version": "1.2.3",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && copy dist\\index.html dist\\404.html",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
@@ -23,6 +23,7 @@
     "dayjs": "^1.11.13",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
+    "react-calendly": "^4.3.1",
     "react-dom": "^19.0.0",
     "react-head": "^3.4.2",
     "react-lazy-load-image-component": "^1.6.3",
