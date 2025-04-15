@@ -4,7 +4,7 @@ import './Contacto.css';
 export const Contacto: React.FC = ()=>{
      return (
          <section>
-                <h1>Productos</h1>
+                <h1>Contacto</h1>
          </section>
      )
 }
