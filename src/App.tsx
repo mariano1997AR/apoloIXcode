@@ -19,12 +19,12 @@ function App() {
           <Navbar />
           <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/home/' element={<Home />} />
-                <Route path='/nosotros' element={<Nosotros />} />
+                <Route path='/apoloIXcode/home' element={<Home />} />
+                <Route path='/apoloIXcode/nosotros' element={<Nosotros />} />
                 <Route path='/about' element={<About />}/>
-                <Route path='/anuncios' element={<Anuncios />} />
-                <Route path='/politicas' element={<Politicas />}/>
-                <Route path='/about-apoloONE' element={<ApoloONE />}/>
+                <Route path='/apoloIXcode/anuncios' element={<Anuncios />} />
+                <Route path='/apoloIXcode/servicios/politicas' element={<Politicas />}/>
+                <Route path='/apoloIXcode/servicios/about-apoloONE' element={<ApoloONE />}/>
                 <Route path='*' element={<Home />} />
           </Routes>
           <FooterPage />

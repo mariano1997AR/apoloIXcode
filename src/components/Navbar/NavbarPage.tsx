@@ -1,36 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import './NavbarPage.css';
 import { ThemeSwitcher } from "../ThemeSwitcher/ThemeSwitcher";
+import { useTheme } from "../ThemeContext";
 
 
 
 export const Navbar: React.FC = () => {
-    const [isOpen, setIsOpen] = useState(false);
+   /* const [isOpen, setIsOpen] = useState(false);*/
+    const { theme } = useTheme();
 
- 
+
     return (
-        <nav className="navbar-container">
-            <header className="logo"><Link className="a"  to="/home">APOLO<span className="negro">IX</span>CODE</Link></header>
+        <nav className="navbar-container" style={{ borderBottomColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
+            <section className="switch-responsive"><ThemeSwitcher /></section>
+            <header className="logo"><Link className="a " style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} to="/apoloIXcode/home">APOLO<span className="negro">IX</span>CODE</Link></header>
+
             <ul className="menu-links">
-                <li><Link className="a hover:text-gray-400" to='/home'>Inicio</Link></li>
-                <li><Link className="a hover:text-gray-400" to="/nosotros" >Nosotros</Link></li>
-                <li className="relative">
-                    <button
-                        className="hover:text-gray-400"
-                        onClick={() => setIsOpen(!isOpen)}
-                    >
-                        Docs ▾
-                    </button>
-                    {isOpen && (
-                        <ul className="absolute top-10 bg-gray-200 text-gray-600 rounded-md shadow-lg w-40 ancho">
-                            <li className="link-submenu"><Link className="block px-4 py-2 hover:bg-gray-300 link" to="/politicas">Politicas</Link></li>
-                            <li  className="link-submenu"><Link className="block px-4 py-2 hover:bg-gray-300" to="/about-apoloONE">ApoloONE</Link></li>
-                        </ul>
-                    )}
+                <li className="linea-bottom"><Link className="a" style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to='/apoloIXcode/home'>Inicio</Link></li>
+                <li className="linea-bottom"><Link className="a hover:text-gray-400" style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to="/apoloIXcode/nosotros" >Nosotros</Link></li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Servicios</a>
+                    <ul className="dropdown-menu mt-4">
+                        <li><Link className="dropdown-item item-link-menu" to='/apoloIXcode/servicios/about-apoloONE'>ApoloIXCODE</Link></li>
+                        <li><Link className="dropdown-item item-link-menu" to='/apoloIXcode/servicios/politicas'>Terminos y condiciones</Link></li>
+                       
+                    </ul>
                 </li>
-                <li className="link-externo "><a className="hover:text-gray-100" href="http://localhost:5174/"  target="_blank">Launch App</a></li>
-                <li className="switch"><ThemeSwitcher /></li>
+                <li className="linea-bottom"><Link className="a hover:text-gray-400 mb-2" style={{ color: theme === "dark" ? '#F5F5F5' : '#4A4947' }} to=''>Contacto</Link></li>
+               <li className="link-externo  "><a className="solicitar-demo" href="http://localhost:5174/" target="_blank">Solicita una Demo</a></li>
+                <li className="switch "><ThemeSwitcher /></li>
             </ul>
         </nav>
     )

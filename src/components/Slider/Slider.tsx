@@ -8,6 +8,7 @@ import containers from '../../assets/brands/container-publisher-sizes.jpg';
 import automatizacionSistemas from '../../assets/brands/automaticacionSistemas.png';
 import brandBarcoComercial from '../../assets/brands/barco-comercio-noche.jpg';
 import globalizacion from '../../assets/brands/globalizacion.jpg';
+import { useTheme } from "../ThemeContext";
 
 
 //logos
@@ -26,6 +27,7 @@ const brands = [
 
 export const Slider: React.FC = () => {
     const carouselRef = useRef<HTMLDivElement>(null);
+    const {theme} = useTheme();
 
     useEffect(() => {
         const scrollCarousel = () => {
@@ -44,7 +46,7 @@ export const Slider: React.FC = () => {
 
 
     return (
-        <section className="carousel-container">
+        <section className="carousel-container" style={{ backgroundColor: theme === 'dark' ? '#4A4947' : '#F5F5F5' }}>
             <section className='carousel-track' ref={carouselRef}>
                 {[...brands, ...brands].map((brand, index) => (
                     <img key={index} src={brand} alt='Brand Logo' className='brand-logo' />

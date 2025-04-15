@@ -2,7 +2,9 @@
     display: flex;
     justify-content: flex-end;
 }
+
 .menu-links li{
+    
     margin-top: -30px;
     margin-left: 10px;
     list-style: none;
@@ -11,7 +13,19 @@
 .menu-links  .a{
     list-style: none;
     text-decoration: none;
+    transition: all 1s;
 }
+
+.menu-links  .a:hover{
+
+    border-bottom: 2px solid #DF6D14;
+}
+
+.item-link-menu{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
 .logo{
     margin-top: 20px;
     text-decoration: none;
@@ -20,7 +34,9 @@
     text-decoration: none;
     font-size: 1.3em;
   
-  
+}
+.logo-header{
+    color: #222831;
 }
 .negro{
     color: #DF6D14;
@@ -54,6 +70,81 @@
     margin-right: 10px;
 }
 .link-externo a{
-    margin-left: 20px;
-    color: #384B70;
+    
+    color: #DF6D14;
+    text-decoration: none;
+}
+.switch-responsive{
+    display: none;
+}
+
+@media (max-width: 1060px) {
+    .logo {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .navbar-container .menu-links {
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .menu-links li{
+       margin-bottom: 30px;
+       margin-right: 10px;
+       justify-content: center;
+    }
+    
+    .menu-links  .a:hover{
+        border: none;
+    }
+    .linea-bottom:hover{
+       transition: all 1s;
+       border-bottom: 2px solid #DF6D14;
+    }
+    .switch{
+       display: none;
+      
+    }
+    .link-submenu{
+        margin-left: 500px;
+        margin-top: 10px;
+    }
+    .link{
+        margin-top: -50px;
+        margin-left: 500px;
+    }
+  
+    .menu-links .switch{
+        display: none;
+    }
+    .switch-responsive{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-item{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+  
+    }
+    .dropdown-item{
+        margin-top: 20px;
+    }
+    .solicitar-demo{
+        border: 2px solid #f44336;
+        margin-top: 10px;
+        padding: 2px;
+    } 
+    .solicitar-demo:hover{
+        transition: all 1s;
+        border:1px solid #222831;
+    }
+
+    .link-externo{
+        margin-top: 10px;
+        padding-top: 5px;
+        
+    }
+   
+    
 }

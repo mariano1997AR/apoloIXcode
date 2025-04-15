@@ -1,7 +1,7 @@
 import React from "react"
 import './ApoloONE.css';
-import importadores from '../../assets/publisher/importadores-docks.webp';
-import logoApoloONE from '../../assets/Logos/apoloonelogo.webp';
+import sistemaApoloGestion from '../../assets/publisher/sistema-gestion-apolo.webp';
+import logoApoloONE from '../../assets/Logos/apoloONE-LOGO.webp';
 
 export const ApoloONE: React.FC = () => {
     return (
@@ -11,19 +11,19 @@ export const ApoloONE: React.FC = () => {
                     <article>
                         <h2 className="subtitulo text-2xl md:text-3xl font-bold text-center">¿Qué es ApoloONE?</h2>
                         <p className='text-lg mt-4 parrafo'>
-                            Es una aplicación de gestion orientado a COMEX (comercio exterior) donde se va a poder gestionar
-                            inventarios(stocks), operaciones, aduanas, logística,transporte y CRM (CUSTOM RELATIONAL MANAGMENT)
+                            Es una aplicación de gestion orientado a comercios donde vas a poder gestionar
+                            inventarios(stocks), operaciones,  logística, pagos a proveedores.
                         </p>
                     </article>
                     <article className="text-2">
                         <h3 className="subtitulo font-bold text-2xl ">Aplicaciónes modulares</h3>
                         <ul>
-                            <li className="py-2">1. Módulo de gestión de inventarios</li>
-                            <li className="py-2">2. Módulo de operaciones de comercio exterior</li>
-                            <li className="py-2">3. Módulo Aduanero</li>
-                            <li className="py-2">4. Módulo de logística y transporte</li>
-                            <li className="py-2">5. CRM de comercio exterior</li>
-                            <li className="py-2">6. Dashboard & Reportes</li>
+                            <li className="py-2">1. Módulo de gestión de inventarios y stock</li>
+                            <li className="py-2">2. Módulo de Punto de venta (POS/TPV)</li>
+                            <li className="py-2">3. Módulo de gestión de compras y proveedores</li>
+                            <li className="py-2">4. Módulo de Reportes y estadísticas</li>
+                            <li className="py-2">5. Módulo de gestión de usuarios y roles</li>
+                            <li className="py-2">6. Accesibilidad </li>
                             <li className="py-2">7. Configuración y Administración</li>
                         </ul>
                     </article>
@@ -31,8 +31,8 @@ export const ApoloONE: React.FC = () => {
                 </section>
                 <section className="flex-about-right">
                     <img
-                        src={importadores}
-                        alt="Imagen ilustrativa de importadores para referenciar la idea de como nacio apoloONE como sistema de gestion"
+                        src={sistemaApoloGestion}
+                        alt="Imagen ilustrativa de un sistema para referenciar la idea de como nacio apoloONE como sistema de gestion"
                         loading='lazy'
                         className='image image-right'
 
@@ -53,34 +53,34 @@ export const ApoloONE: React.FC = () => {
                 <section className="flex-about-right">
                     <h3 className="subtitulo font-bold ">Características de apoloONE</h3>
                     <article className="modulos-app">
-                        <h4 className="subtitulo-modulo">Módulo de gestión de inventarios</h4>
+                        <h4 className="subtitulo-modulo">Módulo de Gestión de inventarios y stock</h4>
                         <ul>
-                            <li> - Alta, baja y modificación de productos</li>
-                            <li> - Codigos HS (o código del sistema armonizado)</li>
-                            <li> - Control de stock por depósito, en tránsito y por estado aduanero</li>
-                            <li> - Previsión de stock por demanda histórica y lead time de importación.</li>
+                            <li> - Control en tiempo real del stock disponible.</li>
+                            <li> - Alertas de productos con bajo stock o vencimientos.</li>
+                            <li> - Soporte para códigos de barras y escaneo rápido.</li>
+                            <li> - Gestión por lotes, fechas de vencimiento y proveedores.</li>
                         </ul>
                     </article>
                     <article className="modulos-app">
-                        <h4 className="subtitulo-modulo">Módulo de operaciones</h4>
+                        <h4 className="subtitulo-modulo">Módulo de Punto de venta (POS/TPV)</h4>
                         <ul>
-                            <li> - Gestión de expedientes de importación/exportación</li>
-                            <li> - Seguimiento de embarques (tracking marítimo, aéreo y terrestre)</li>
-                            <li> - Cálculo de costos CIF ,FOB, DDP</li>
-                            <li> - Carga de documentos: facturas proforma, comerciales, B/L,packing list, certificados de origen</li>
+                            <li> - Interfaz rápida y fácil para cajeros.</li>
+                            <li> - Soporte para múltiples métodos de pago (efectivo, débito,QR,etc).</li>
+                            <li> - Impresión automática de tickets/facturas.</li>
+                            <li> - Apertura y cierre de caja con control de movimientos.</li>
                         </ul>
                     </article>
                     <article className="modulos-app">
-                        <h4 className="subtitulo-modulo">Módulo Aduanero</h4>
+                        <h4 className="subtitulo-modulo">Módulo de facturación electrónica</h4>
                         <ul>
-                            <li> - Simulación de derechos e impuestos aduaneros (calculadora de importación/exportación)</li>
-                            <li> - Gestión de despachos: despachante asignado, estado AFIP,SIRA/SIMI/SOFA</li>
-                            <li> - Géstion de permisos: SENASA, ANMAT, INAL, etc</li>
-                            <li> - Integración futura con API de la AFIP o servicios de consulta de SIRA (Si puede realizarse)</li>
+                            <li> - Generación automática de comprobantes fiscales (Factura A,B, Ticket).</li>
+                            <li> - Integración con AFIP (u otro ente tributario)</li>
+                            <li> - Registro automático de ventas por día/turno</li>
+                      
                         </ul>
                     </article>
                     <article className="modulos-app">
-                        <h4 className="subtitulo-modulo">Módulo de CRM</h4>
+                        <h4 className="subtitulo-modulo">Módulo de Gestión de compras y proveedores</h4>
                         <ul>
                             <li> - Gestión de clientes y proveedores internacionales.</li>
                             <li> - Contactos por país, historial de operaciones y cotizaciones.</li>
