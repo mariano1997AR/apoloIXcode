@@ -44,6 +44,7 @@ export const Card: React.FC<ListarDatosProps> = ({usuarios}) => {
                                 src={card.image} 
                                 alt={card.descripcion} 
                                 className="user-image"
+                                loading="lazy"
                             />
                             <h2 className="user-name">{card.name}</h2>
                             <p className="user-profession">{card.descripcion}</p>
