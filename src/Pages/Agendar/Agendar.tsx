@@ -1,8 +1,26 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { CalendlyWidget } from "../../components/CalendlyWidget/CalendlyWidget"
-import { Title, Meta } from "react-head"
+import { Title, Meta } from "react-head";
+import { Loader } from "../../components/Loader/Loader";
 
 export const Agendar: React.FC = () => {
+    const [loading,setLoading] = useState<boolean>(true);
+
+    useEffect(()=>{
+           const timeout = setTimeout(()=>{
+              setLoading(false);
+           },4500);
+
+           return ()=> clearTimeout(timeout);
+    },[]);
+
+    if(loading){
+        return(
+            <div className="flex justify-center items-center min-h-[300px]">
+                 <Loader />
+            </div>
+        )
+    }
     return (
         <>
             <Title>Agendar reunion | ApoloIXcode</Title>

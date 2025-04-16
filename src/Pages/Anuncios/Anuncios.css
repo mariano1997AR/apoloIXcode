@@ -1,0 +1,30 @@
+.container-anuncio{
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.flex-container-anuncios{
+    display: flex;
+    flex-direction: row;
+}
+.flex-left-item{
+    flex:50%;
+    border: 1px solid black;
+    padding: 15px;
+    margin-top: 10px;
+
+  
+}
+.flex-right-item{
+    flex: 50%;
+    border: 1px solid black;
+    padding: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+@media (max-width: 1060px){
+    .flex-container-anuncios{
+        flex-direction: column;
+    }
+}

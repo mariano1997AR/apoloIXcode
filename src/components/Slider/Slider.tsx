@@ -1,13 +1,14 @@
 import React, { useEffect, useRef } from "react"
 import './Slider.css';
-import marketingDigital from '../../assets/brands/marketing-digital.jpg';
-import facturacion from '../../assets/brands/facturacion.jpg';
-import imagenArcaArgentina from '../../assets/brands/imagenArca.jpg';
-import sistemasInformaticos from '../../assets/brands/sistemasInformaticos.png';
-import containers from '../../assets/brands/container-publisher-sizes.jpg';
-import automatizacionSistemas from '../../assets/brands/automaticacionSistemas.png';
-import brandBarcoComercial from '../../assets/brands/barco-comercio-noche.jpg';
+import marketingDigital from '../../assets/brands/marketing-digital.webp';
+import facturacion from '../../assets/brands/facturacion.webp';
+import imagenArcaArgentina from '../../assets/brands/imagenArca.webp';
+import sistemasInformaticos from '../../assets/brands/sistemasInformaticos.webp';
+import apoloONELOGO from '../../assets/Logos/apoloONE-LOGO.webp';
+import automatizacionSistemas from '../../assets/brands/automaticacionSistemas.webp';
+import multitarea from '../../assets/brands/multitarea.webp';
 import globalizacion from '../../assets/brands/globalizacion.jpg';
+import softwareIntegracion from '../../assets/brands/software-integracion.webp';
 import { useTheme } from "../ThemeContext";
 
 
@@ -16,12 +17,13 @@ import { useTheme } from "../ThemeContext";
 const brands = [
     imagenArcaArgentina,
     sistemasInformaticos,
-    containers,
+    apoloONELOGO,
     automatizacionSistemas,
-    brandBarcoComercial,
     globalizacion,
     marketingDigital,
     facturacion,
+    multitarea,
+    softwareIntegracion,
 ];
 
 

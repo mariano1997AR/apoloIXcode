@@ -22,7 +22,7 @@ export const Home: React.FC = () => {
                 <section className="home-container">
                     <CarrouselPage />
 
-                    <section className="flex-container-inicio">
+                    <section className="flex-container-inicio" style={{backgroundColor:theme === "dark" ? 'rgba(90,90,90,1)':'' }} >
                         <section className="flex-left-image-inicio">
                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                 width="512.000000pt" height="300.000000pt" viewBox="0 0 512.000000 512.000000"
@@ -153,7 +153,7 @@ c-11 33 -9 36 49 106 32 40 64 82 70 94 17 30 15 129 -2 161 -17 32 -262 275
 
                     </section>
 
-                    <section className="flex-container-inicio">
+                    <section className="flex-container-inicio" style={{backgroundColor:theme === "dark" ? 'rgba(90,90,90,1)':'' }}>
                         {/*version responsive --> Dispositivo adaptable */}
                         <section className="aparecerDispositivo flex-left-image-inicio desaparecerPC">
 
@@ -311,7 +311,7 @@ m-1196 -653 l0 -240 -320 0 -320 0 0 240 0 240 320 0 320 0 0 -240z m2640
 
                     </section>
 
-                    <section className="flex-container-inicio desaparecer">
+                    <section className="flex-container-inicio desaparecer" style={{backgroundColor:theme === "dark" ? 'rgba(90,90,90,1)':'' }}>
                         <section className="flex-left-image-inicio">
                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                                 width="512.000000pt" height="400.000000pt" viewBox="0 0 512.000000 512.000000"
@@ -387,7 +387,7 @@ l188 -325 -259 -3 c-143 -1 -376 -1 -518 0 l-259 3 73 125 c40 69 125 216 190
 
                     </section>
 
-                    <section className="flex-container-inicio">
+                    <section className="flex-container-inicio" style={{backgroundColor:theme === "dark" ? 'rgba(90,90,90,1)':'' }}>
                         {/*Disponible en Dispositivo movil */}
                         <section className="flex-right-image-inicio desaparecerPC aparecerDispositivo">
                             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -595,11 +595,10 @@ l-48 -25 -31 32 -30 32 23 45 c29 55 31 113 6 160 -10 19 -30 69 -45 110 -34
                                         Sistema de gestión <b>ApoloONE</b> posee estas características:
                                     </p>
                                     <ul>
-                                        <li> Sistema Gestor  </li>
-                                        <li> Versión: 0.0.1</li>
+                                        <li> Sistema de gestión  </li>
+                                        <li> Versión: 1.2.3</li>
                                         <li> Arquitectura Monolitica</li>
                                         <li> Sistema de integracion con IA Geminis</li>
-
                                     </ul>
                                 </article>
                                 <article className="anuncio-two" style={{ borderColor: theme === "dark" ? '#F5F5F5' : '#4A4947' }}>

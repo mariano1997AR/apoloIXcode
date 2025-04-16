@@ -27,6 +27,7 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+
 .card-list .card-item .user-image{
     width: 150px;
     height: 150px;
@@ -41,6 +42,10 @@
      /*color: #fff;*/
      font-weight: 500;
      margin: 14px 0 40px;
+}
+.user-image:hover{
+    transition: all 1s;
+    background-color: #424242;
 }
 
 .card-list .card-item .message-button{
@@ -59,4 +64,11 @@
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid #fff;
     color: #424242;
+}
+
+@media (max-width: 1060px){
+ 
+    .card-list .card-item{
+        width: 100%;
+    }
 }

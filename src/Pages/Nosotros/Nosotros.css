@@ -33,4 +33,10 @@
     .flex-nosotros-main{
         flex-direction: column;
     }
+ 
+    .img-dispositivo{
+        width: 100%;
+        height: 100%;
+    }
+
 }

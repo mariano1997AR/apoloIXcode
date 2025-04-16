@@ -2,7 +2,7 @@
   "name": "apoloix",
   "homepage": "https://github.com/mariano1997AR/apoloIXcode/",
   "private": true,
-  "version": "1.2.3",
+  "version": "1.2.5",
   "type": "module",
   "scripts": {
     "dev": "vite",

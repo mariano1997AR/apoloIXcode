@@ -2,35 +2,17 @@ import React from "react"
 import { Swiper,SwiperSlide } from "swiper/react";
 import { Pagination,Navigation,Autoplay } from "swiper/modules";
 import './Card.css';
-import foto1 from '../../assets/brands/barco-comercio-noche.jpg';
-import foto2 from '../../assets/brands/facturacion.jpg';
-import seguridadInformatica from '../../assets/Logos/seguridad-informatica.webp';
-
-
-const cards = [
-  {
-      name:"Mariano Martinotti",
-      descripcion:"FOUNDER",
-      image:foto1
-  },
-  {
-    name:"Seguridad Informática",
-    descripcion:`
-       - Cifrado de datos
-    
-    `,
-    image:seguridadInformatica
-  },
-  {
-    name:"Juan peter",
-    descripcion:"Dev",
-    image:foto2
-  }
-]
+import { Usuarios } from "../types";
 
 
 
-export const Card: React.FC = () => {
+interface ListarDatosProps{
+    usuarios:Usuarios[];
+}
+
+
+
+export const Card: React.FC<ListarDatosProps> = ({usuarios}) => {
     return (
        <Swiper
            modules={[Navigation,Pagination,Autoplay]}
@@ -44,13 +26,7 @@ export const Card: React.FC = () => {
            navigation
            pagination={{clickable:true}}
            speed={800}
-       
            grabCursor
-           
-
-           
-
-           
            breakpoints={{
                 0:{slidesPerView:1},
                 620:{slidesPerView:2},
@@ -59,7 +35,7 @@ export const Card: React.FC = () => {
            className="w-full max-w-6xl mx-auto py-6"
        
        >
-      {cards.map((card, index) => (
+      {usuarios.map((card, index) => (
         <SwiperSlide key={index}>
              <section className="slider-wrapper rounded-xl shadow-md overflow-hidden h-full flex flex-col">
                  <section className="card-list">

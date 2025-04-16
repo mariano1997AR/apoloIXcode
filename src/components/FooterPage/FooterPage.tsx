@@ -17,8 +17,8 @@ export const FooterPage: React.FC = () => {
                     <article className='columna-redes-sociales'>
                         <ul >
                             <li className='subtitulo-footer'><b>Nuestra politicas</b></li>
-                            <li><Link to='/politicas' className="link" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>Politicas de privacidad</Link></li>
-                            <li><a href="#" className="link" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>Terminos y condiciones</a></li>
+                            <li><Link to='/servicios/politicas' className="link" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>Politicas de privacidad</Link></li>
+                            <li><Link to='/servicios/politicas' className="link" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>Terminos y condiciones</Link></li>
                             <li><a href="#" className="link" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>Seguridad</a></li>
                         </ul>
                     </article>
@@ -38,7 +38,7 @@ export const FooterPage: React.FC = () => {
                         <li>Copyright 2025 - <span className='mark-company'>Apolo<span className="naranja">IX</span>code</span></li>
                         <li><a></a></li>
                         <li><a></a></li>
-                        <li><a href="#" className="link" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>Proximos Productos</a></li>
+                        <li><Link to='/medios-pagos' className="link" style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} >Medios de Pagos</Link></li>
                     </ul>
                 </section>
 
@@ -52,7 +52,7 @@ export const FooterPage: React.FC = () => {
                     <li><a target="_blank"  style={{ color: theme === "dark" ? ' #F5F5F5' : '#4A4947' }} href="https://x.com/apoloixcode">X</a></li>
                 </ul>
                 <footer className="copyright-dispositivo" style={{ borderTopColor: theme === "dark" ? ' #F5F5F5' : '#4A4947' }}>
-                    <p className="copyright-logo-act">Copyright 2025  - <span className='mark-company'>Apolo<span className="naranja">IX</span>code</span>™</p>
+                    <p className="copyright-logo-act">Copyright 2025™</p>
                 </footer>
             </section>
 
