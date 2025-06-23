@@ -7,7 +7,6 @@ import sistemasInformaticos from '../../assets/brands/sistemasInformaticos.webp'
 import apoloONELOGO from '../../assets/Logos/apoloONE-LOGO.webp';
 import automatizacionSistemas from '../../assets/brands/automaticacionSistemas.webp';
 import multitarea from '../../assets/brands/multitarea.webp';
-import globalizacion from '../../assets/brands/globalizacion.jpg';
 import softwareIntegracion from '../../assets/brands/software-integracion.webp';
 import { useTheme } from "../ThemeContext";
 
@@ -19,7 +18,6 @@ const brands = [
     sistemasInformaticos,
     apoloONELOGO,
     automatizacionSistemas,
-    globalizacion,
     marketingDigital,
     facturacion,
     multitarea,
@@ -51,7 +49,13 @@ export const Slider: React.FC = () => {
         <section className="carousel-container" style={{ backgroundColor: theme === 'dark' ? '#4A4947' : '#F5F5F5' }}>
             <section className='carousel-track' ref={carouselRef}>
                 {[...brands, ...brands].map((brand, index) => (
-                    <img key={index} src={brand} alt='Brand Logo' className='brand-logo' />
+                    <img 
+                        key={index} 
+                        src={brand} 
+                        alt='Brand Logo' 
+                        className='brand-logo' 
+                        loading="lazy"
+                        />
                 ))}
             </section>
 
